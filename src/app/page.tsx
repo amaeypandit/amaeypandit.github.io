@@ -27,7 +27,7 @@ export default function Home() {
           <ResumeCard
             key={resume.id}
             title={resume.title}
-            icon={resume.icon}
+            iconName={resume.iconName}
             skills={resume.skills}
             downloadUrl={resume.downloadUrl}
             delay={2 + idx}

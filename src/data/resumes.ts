@@ -1,28 +1,33 @@
-import { Brain, BarChart3, Database } from "lucide-react";
+export type IconName = "brain" | "chart" | "database";
 
-export const resumes = [
+export interface Resume {
+  id: string;
+  title: string;
+  iconName: IconName;
+  skills: string[];
+  downloadUrl: string;
+}
+
+export const resumes: Resume[] = [
   {
     id: "ai-engineering",
     title: "AI Engineering",
-    icon: Brain,
+    iconName: "brain",
     skills: ["LLMs", "PyTorch", "RAG", "Agents"],
     downloadUrl: "/resumes/ai-engineering.pdf",
-    color: "accent",
   },
   {
     id: "data-science",
     title: "Data Science",
-    icon: BarChart3,
+    iconName: "chart",
     skills: ["Statistics", "Modeling", "Scikit-Learn", "Python"],
     downloadUrl: "/resumes/data-science.pdf",
-    color: "accent",
   },
   {
     id: "data-engineering",
     title: "Data Engineering",
-    icon: Database,
+    iconName: "database",
     skills: ["ETL", "Spark", "SQL", "Airflow"],
     downloadUrl: "/resumes/data-engineering.pdf",
-    color: "accent",
   },
 ];

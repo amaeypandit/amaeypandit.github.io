@@ -3,11 +3,18 @@
 import { BentoTile } from "./BentoTile";
 import { LinkButton } from "@/components/ui/Button";
 import { SkillChip } from "@/components/ui/SkillChip";
-import { LucideIcon, Download } from "lucide-react";
+import { Brain, BarChart3, Database, Download } from "lucide-react";
+import type { IconName } from "@/data/resumes";
+
+const iconMap = {
+  brain: Brain,
+  chart: BarChart3,
+  database: Database,
+};
 
 interface ResumeCardProps {
   title: string;
-  icon: LucideIcon;
+  iconName: IconName;
   skills: string[];
   downloadUrl: string;
   delay?: number;
@@ -15,11 +22,13 @@ interface ResumeCardProps {
 
 export function ResumeCard({
   title,
-  icon: Icon,
+  iconName,
   skills,
   downloadUrl,
   delay = 0,
 }: ResumeCardProps) {
+  const Icon = iconMap[iconName];
+
   return (
     <BentoTile colSpan={1} rowSpan={1} delay={delay} className="flex flex-col">
       <div className="flex items-center gap-3 mb-4">
