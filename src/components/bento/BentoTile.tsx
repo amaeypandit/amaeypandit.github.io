@@ -9,6 +9,7 @@ interface BentoTileProps {
   colSpan?: 1 | 2 | 3 | 4;
   rowSpan?: 1 | 2;
   delay?: number;
+  id?: string;
 }
 
 const colSpanClasses = {
@@ -29,9 +30,11 @@ export function BentoTile({
   colSpan = 1,
   rowSpan = 1,
   delay = 0,
+  id,
 }: BentoTileProps) {
   return (
     <motion.div
+      id={id}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
