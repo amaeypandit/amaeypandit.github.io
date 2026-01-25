@@ -8,22 +8,24 @@ export function CareerTimeline() {
   return (
     <BentoTile colSpan={3} rowSpan={2} delay={0} className="flex flex-col justify-between">
       <div>
-        <div className="flex items-center gap-3 mb-6">
-          <span className="pulse-dot pl-4 text-accent font-mono text-sm uppercase tracking-wider">
-            Currently
-          </span>
-        </div>
-
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-text-primary mb-4">
-          {profile.currentRole}
-        </h1>
-
-        <p className="text-xl text-text-secondary mb-2">
-          at <span className="text-text-primary">{profile.currentCompany}</span>
+        <p className="text-accent font-mono text-sm uppercase tracking-wider mb-4">
+          {profile.headline}
         </p>
 
-        <p className="text-text-secondary text-lg mt-6 max-w-2xl leading-relaxed">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-text-primary mb-6">
+          {profile.name}
+        </h1>
+
+        <p className="text-xl md:text-2xl text-text-secondary mb-6 leading-relaxed">
           {profile.tagline}
+        </p>
+
+        <p className="text-text-secondary text-base md:text-lg max-w-2xl leading-relaxed">
+          {profile.bio}
+        </p>
+
+        <p className="text-accent font-medium mt-6 text-sm md:text-base">
+          {profile.lookingFor}
         </p>
       </div>
 
@@ -33,7 +35,7 @@ export function CareerTimeline() {
           variant="solid"
           className="w-full md:w-auto"
         >
-          Hire Me
+          Get In Touch
         </LinkButton>
       </div>
     </BentoTile>
