@@ -9,13 +9,14 @@ export interface Project {
 }
 
 export const featuredProject: Project = {
-  id: "rag-system",
-  title: "Enterprise RAG System",
+  id: "budget-app",
+  title: "Personal Budget Agent",
   description:
-    "Production-grade retrieval-augmented generation system for document Q&A at scale.",
-  image: "/images/projects/rag-system.jpg",
-  techStack: ["Python", "LangChain", "Pinecone", "FastAPI", "React"],
-  githubUrl: "https://github.com/yourusername/rag-system",
+    "A clean, intuitive ollama powered budget management app for tracking expenses and intelligent speinding insights with spending pattern visualization.",
+  image: "/images/projects/budget-app.jpg",
+  techStack: ["Tailwind CSS", "Chart.js", "Ollama", "PyTorch", "TensorFlow", "Docker"],
+  githubUrl: "https://github.com/amaeypandit/budgeting-agent",
+  liveUrl: "https://amaeypandit.github.io/budgeting-agent",
 };
 
 export const projects: Project[] = [
