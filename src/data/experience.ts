@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
     startYear: "Jul 2025",
     endYear: "Dec 2025",
     logo: "/images/companies/audax.png",
-    skills: ["Snowflake", "Prefect", "Python", "LLMs"],
+    skills: ["Snowflake", "ETL", "Unstructured RAG", "Data Governance"],
     achievements: [
       "Engineered a firmwide alerting platform across Snowflake, Prefect, and on-prem servers to surface pipeline failures, SLA breaches, and silent data issues upstream",
       "Developed ELT/ETL pipelines spanning external platforms and internal systems, reducing daily manual operational effort by ~15%",
@@ -34,7 +34,7 @@ export const experiences: Experience[] = [
     startYear: "Jul 2024",
     endYear: "Dec 2024",
     logo: "/images/companies/general-atlantic.jpg",
-    skills: ["Python", "Alteryx", "Databricks", "LLMs"],
+    skills: ["Python Analytics", "Databricks", "Financial Data Modeling", "Process Automation"],
     achievements: [
       "Built LLM-driven automation tools for Investor Services, cutting turnaround time for key workflows by ~50%",
       "Developed Python scripts for ingestion and transformation tasks flowing through Alteryx, Databricks, and lakehouse systems",
@@ -48,7 +48,7 @@ export const experiences: Experience[] = [
     startYear: "Jan 2024",
     endYear: "Apr 2024",
     logo: "/images/companies/northeastern.png",
-    skills: ["MySQL", "Python", "Teaching"],
+    skills: ["SQL", "Database Design", "MySQL", "Technical Teaching"],
     achievements: [
       "Helped develop course assignments and projects for MySQL and Python, improving hands-on learning materials",
       "Held weekly office hours and answered Piazza questions for 200+ students, reinforcing DBMS fundamentals and query design",
@@ -62,7 +62,7 @@ export const experiences: Experience[] = [
     startYear: "Jun 2023",
     endYear: "Aug 2023",
     logo: "/images/companies/Neki.png",
-    skills: ["HubSpot", "Analytics", "Agile"],
+    skills: ["Business Analytics", "Process Improvement", "HubSpot", "Client Experience"],
     achievements: [
       "Executed business analytics for a B2B SaaS social-impact startup, translating insights into operational improvements",
       "Designed and implemented a fully integrated Help Center in HubSpot, strengthening customer support workflows",
@@ -76,7 +76,7 @@ export const experiences: Experience[] = [
     startYear: "Apr 2023",
     endYear: "Dec 2025",
     logo: "/images/companies/Tamid.jpeg",
-    skills: ["Leadership", "Curriculum Design", "Consulting"],
+    skills: ["Leadership", "Consulting Delivery", "Team Management", "Curriculum Design"],
     achievements: [
       "Led a 150+ member organization with 13 Executive Board members across 7 committees, delivering real work for local startups",
       "Scaled industry-aligned tracks across investing, consulting, and technical consulting to drive sustained client impact",
