@@ -1,10 +1,10 @@
 "use client";
 
 import { cn } from "@/lib/cn";
-import { ComponentType } from "react";
+import { ElementType } from "react";
 
 interface SocialIconProps {
-  icon: ComponentType<{ size?: number; className?: string }>;
+  icon: ElementType;
   href: string;
   label: string;
   className?: string;
