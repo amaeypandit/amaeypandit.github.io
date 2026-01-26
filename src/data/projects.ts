@@ -46,6 +46,33 @@ export const projects: Project[] = [
     category: "ai-ml",
     githubUrl: "https://github.com/derrickyg/Combine-Prediction",
   },
+  {
+    id: "project-supernova",
+    title: "Project Supernova",
+    description:
+      "Vector-based document processing pipeline to automate invoice ingestion into Workday, eliminating manual steps. Features an LLM-driven orchestration layer with LangChain to coordinate tasks across ingestion and validation workflows. Built at General Atlantic (code on company GitHub).",
+    image: DEFAULT_PROJECT_IMAGE,
+    techStack: ["Python", "LangChain", "RAG", "Workday API"],
+    category: "ai-ml",
+  },
+  {
+    id: "data-governance-platform",
+    title: "Data Governance & Quality Alerting Platform",
+    description:
+      "Enterprise data governance system to detect pipeline failures, SLA breaches, and silent data issues upstream. Includes a self-service alert configuration app used by ~30 stakeholders to define custom data quality logic, cadence, and recipients. Integrated end-to-end resolution workflows by routing alerts into engineering tickets. Built at Audax Private Equity (code on company GitHub).",
+    image: DEFAULT_PROJECT_IMAGE,
+    techStack: ["Snowflake", "Prefect", "Python", "Streamlit"],
+    category: "data-engineering",
+  },
+  {
+    id: "endzone-analytics",
+    title: "Endzone Analytics",
+    description:
+      "Full-stack database-driven application providing comprehensive NFL statistics and key metrics. Built with REST APIs, Flask backend, MySQL database, and Appsmith UI. Containerized with Docker for deployment. Developed as a course project at Northeastern University.",
+    image: DEFAULT_PROJECT_IMAGE,
+    techStack: ["Python", "Flask", "MySQL", "Docker", "Appsmith"],
+    category: "data-engineering",
+  },
 ];
 
 export const featuredProject = projects.find((p) => p.featured) || projects[0];
