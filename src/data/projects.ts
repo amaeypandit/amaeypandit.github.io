@@ -1,3 +1,5 @@
+export const DEFAULT_PROJECT_IMAGE = "/images/stock/tech-abstract.jpg";
+
 export type ProjectCategory = "ai-ml" | "data-engineering" | "web" | "other";
 
 export interface Project {
