@@ -13,7 +13,7 @@ export function FeaturedProject() {
       <SectionHeader>Featured Project</SectionHeader>
 
       <div className="relative h-32 -mx-6 -mt-2 mb-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent z-10" />
         <Image
           src={featuredProject.image}
           alt={featuredProject.title}
