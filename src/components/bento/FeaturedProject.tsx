@@ -18,7 +18,8 @@ export function FeaturedProject() {
           src={featuredProject.image}
           alt={featuredProject.title}
           fill
-          className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          style={{ objectPosition: "center 25%" }}
         />
       </div>
 
