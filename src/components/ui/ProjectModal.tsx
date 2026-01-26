@@ -38,23 +38,23 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     <AnimatePresence>
       {project && (
         <>
-          {/* Backdrop */}
+          {/* Backdrop + Centering Container */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
-          />
-
-          {/* Modal */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="fixed inset-4 md:inset-auto md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-2xl md:max-h-[85vh] bg-surface border border-border rounded-2xl overflow-hidden z-50 flex flex-col"
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
           >
+            {/* Modal */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-2xl max-h-[85vh] bg-surface border border-border rounded-2xl overflow-hidden flex flex-col"
+            >
             {/* Close button */}
             <button
               onClick={onClose}
@@ -121,6 +121,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 )}
               </div>
             </div>
+            </motion.div>
           </motion.div>
         </>
       )}
