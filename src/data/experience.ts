@@ -33,7 +33,7 @@ export const experiences: Experience[] = [
     role: "Capital Solutions Finance Co-op",
     startYear: "Jul 2024",
     endYear: "Dec 2024",
-    logo: "/images/companies/general-atlantic.png",
+    logo: "/images/companies/general-atlantic.jpg",
     skills: ["Python", "Alteryx", "Databricks", "LLMs"],
     achievements: [
       "Built LLM-driven automation tools for Investor Services, cutting turnaround time for key workflows by ~50%",
@@ -61,7 +61,7 @@ export const experiences: Experience[] = [
     role: "Business Transformation Intern",
     startYear: "Jun 2023",
     endYear: "Aug 2023",
-    logo: "/images/companies/neki.png",
+    logo: "/images/companies/Neki.png",
     skills: ["HubSpot", "Analytics", "Agile"],
     achievements: [
       "Executed business analytics for a B2B SaaS social-impact startup, translating insights into operational improvements",
@@ -75,7 +75,7 @@ export const experiences: Experience[] = [
     role: "President & VP of Education",
     startYear: "Apr 2023",
     endYear: "Dec 2025",
-    logo: "/images/companies/tamid.png",
+    logo: "/images/companies/Tamid.jpeg",
     skills: ["Leadership", "Curriculum Design", "Consulting"],
     achievements: [
       "Led a 150+ member organization with 13 Executive Board members across 7 committees, delivering real work for local startups",

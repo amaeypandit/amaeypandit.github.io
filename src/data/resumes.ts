@@ -32,7 +32,7 @@ export const resumes: Resume[] = [
     slug: "data-engineering",
     iconName: "database",
     skills: ["ETL", "Spark", "SQL", "Airflow"],
-    pdfPath: "/resumes/data-engineering.pdf",
+    pdfPath: "/resumes/data-engineer.pdf",
   },
 ];
 
