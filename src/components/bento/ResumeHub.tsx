@@ -16,7 +16,7 @@ const iconMap = {
 export function ResumeHub() {
   return (
     <BentoTile colSpan={4} rowSpan={1} delay={2} className="overflow-hidden">
-      <SectionHeader>Specialized Paths</SectionHeader>
+      <SectionHeader>My Resumes</SectionHeader>
 
       <div className="grid gap-4 md:grid-cols-3">
         {resumes.map((resume) => {
