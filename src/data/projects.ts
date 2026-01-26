@@ -68,10 +68,11 @@ export const projects: Project[] = [
     id: "endzone-analytics",
     title: "Endzone Analytics",
     description:
-      "Full-stack database-driven application providing comprehensive NFL statistics and key metrics. Built with REST APIs, Flask backend, MySQL database, and Appsmith UI. Containerized with Docker for deployment. Developed as a course project at Northeastern University.",
+      "Full-stack database-driven application providing comprehensive NFL statistics and key metrics. Built with REST APIs, Flask backend, MySQL database, and Appsmith UI. Containerized with Docker for deployment.",
     image: DEFAULT_PROJECT_IMAGE,
     techStack: ["Python", "Flask", "MySQL", "Docker", "Appsmith"],
     category: "data-engineering",
+    githubUrl: "https://github.com/siondw/Endzone-Analytics",
   },
 ];
 
