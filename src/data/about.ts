@@ -4,7 +4,7 @@ export const aboutData = {
   headline: `Hi, I'm ${profile.name.split(" ")[0]}`,
   bio: [
     profile.bio,
-    "I'm passionate about building systems that turn raw data into actionable intelligence. Whether it's designing ETL pipelines, fine-tuning ML models, or creating LLM-powered applications, I love solving problems at the intersection of data and software engineering.",
+    "What excites me most is the moment when a well-designed system clicks into place and suddenly a team can move faster, see clearer, or automate what used to take hours. That's the kind of impact I want to keep building.",
   ],
   journey: [
     "My journey into data started at Northeastern University, where I combined Data Science with Business Administration to understand both the technical and strategic sides of data-driven decision making.",

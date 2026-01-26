@@ -2,7 +2,7 @@ export const profile = {
   name: "Amaey Pandit",
   headline: "Data Engineer & AI Builder",
   tagline: "I build data platforms that make AI possible.",
-  bio: "Northeastern (Honors) student studying Data Science & Business Administration. I love building practical data systems—from ELT pipelines and cloud migrations to data governance and LLM-powered workflows. My experience spans private equity at Audax and General Atlantic, where I focused on making data reliable, discoverable, and usable for analytics and AI.",
+  bio: "I love building things that help people make better decisions with data. Whether it's an alerting platform that catches issues before they cascade, an LLM workflow that saves hours of manual work, or a pipeline that finally makes messy data usable—I'm drawn to problems where the right system can change how a team operates. I've had the chance to build these kinds of solutions at Audax and General Atlantic, and I'm currently finishing my Data Science & Business Administration degree at Northeastern (Honors).",
   lookingFor: "Currently seeking full-time opportunities in Data Engineering and AI/ML.",
   email: "amaey.pandit1@gmail.com",
   location: "New Jersey • Boston",
