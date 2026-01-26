@@ -7,22 +7,29 @@ export const techStack: TechItem[] = [
   // Languages
   { name: "Python", category: "language" },
   { name: "SQL", category: "language" },
+  { name: "TypeScript", category: "language" },
   { name: "R", category: "language" },
   { name: "NoSQL", category: "language" },
 
   // Frameworks & Libraries
   { name: "PyTorch", category: "framework" },
   { name: "TensorFlow", category: "framework" },
+  { name: "Scikit-learn", category: "framework" },
   { name: "Pandas", category: "framework" },
   { name: "NumPy", category: "framework" },
   { name: "Apache Spark", category: "framework" },
+  { name: "React", category: "framework" },
+  { name: "Next.js", category: "framework" },
   { name: "Streamlit", category: "framework" },
 
   // Tools
   { name: "Docker", category: "tool" },
   { name: "Git", category: "tool" },
+  { name: "GitHub Actions", category: "tool" },
+  { name: "Claude Code", category: "tool" },
   { name: "Prefect", category: "tool" },
   { name: "Airflow", category: "tool" },
+  { name: "MySQL", category: "tool" },
   { name: "Alteryx", category: "tool" },
   { name: "Tableau", category: "tool" },
   { name: "Redis", category: "tool" },
@@ -32,12 +39,16 @@ export const techStack: TechItem[] = [
   { name: "AWS", category: "cloud" },
   { name: "Azure", category: "cloud" },
   { name: "Snowflake", category: "cloud" },
+  { name: "Snowflake RBAC", category: "cloud" },
   { name: "Databricks", category: "cloud" },
+  { name: "Chroma", category: "cloud" },
 
   // AI & ML
   { name: "LLMs", category: "ai" },
   { name: "RAG", category: "ai" },
   { name: "LangChain", category: "ai" },
+  { name: "OpenAI API", category: "ai" },
+  { name: "Hugging Face", category: "ai" },
   { name: "ELT/ETL", category: "ai" },
 ];
 
