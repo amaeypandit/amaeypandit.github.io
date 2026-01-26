@@ -20,11 +20,10 @@ export const projects: Project[] = [
     title: "Personal Budget Agent",
     description:
       "A clean, intuitive ollama powered budget management app for tracking expenses and intelligent spending insights with spending pattern visualization.",
-    image: "/images/projects/budget-app.jpg",
-    techStack: ["Tailwind CSS", "Chart.js", "Ollama", "PyTorch", "TensorFlow", "Docker"],
+    image: "/images/projects/budget-agent.png",
+    techStack: ["Ollama", "PyTorch", "MCP", "Streamlit"],
     category: "ai-ml",
     githubUrl: "https://github.com/amaeypandit/budgeting-agent",
-    liveUrl: "https://amaeypandit.github.io/budgeting-agent",
     featured: true,
   },
   {
