@@ -11,11 +11,19 @@ export interface Resume {
 
 export const resumes: Resume[] = [
   {
+    id: "data-engineering",
+    title: "Data Engineer",
+    slug: "data-engineering",
+    iconName: "database",
+    skills: ["SQL", "ETL / ELT", "Snowflake", "Airflow / Prefect", "Spark", "Data Governance"],
+    pdfPath: "/resumes/data-engineer.pdf",
+  },
+  {
     id: "ai-engineer",
     title: "AI Engineer",
     slug: "ai-engineer",
     iconName: "brain",
-    skills: ["LLMs", "PyTorch", "RAG", "Agents"],
+    skills: ["LLMs", "RAG", "AI Agents", "PyTorch", "Vector Databases", "LLM Automation"],
     pdfPath: "/resumes/ai-engineer.pdf",
   },
   {
@@ -23,16 +31,8 @@ export const resumes: Resume[] = [
     title: "Data Scientist",
     slug: "data-scientist",
     iconName: "chart",
-    skills: ["Statistics", "Modeling", "Scikit-Learn", "Python"],
+    skills: ["Statistics", "Predictive Modeling", "Scikit-Learn", "Python", "Feature Engineering", "Model Evaluation"],
     pdfPath: "/resumes/data-scientist.pdf",
-  },
-  {
-    id: "data-engineering",
-    title: "Data Engineering",
-    slug: "data-engineering",
-    iconName: "database",
-    skills: ["ETL", "Spark", "SQL", "Airflow"],
-    pdfPath: "/resumes/data-engineer.pdf",
   },
 ];
 
