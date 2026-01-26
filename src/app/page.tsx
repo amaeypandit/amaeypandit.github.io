@@ -29,7 +29,7 @@ export default function Home() {
             title={resume.title}
             iconName={resume.iconName}
             skills={resume.skills}
-            downloadUrl={resume.downloadUrl}
+            downloadUrl={resume.pdfPath}
             delay={2 + idx}
           />
         ))}
