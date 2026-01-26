@@ -119,9 +119,16 @@ transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 ```
 src/
 ├── app/
-│   ├── layout.tsx
-│   ├── page.tsx
-│   └── globals.css
+│   ├── layout.tsx              # Root layout (includes Header)
+│   ├── page.tsx                # Homepage (bento grid)
+│   ├── globals.css
+│   ├── about/
+│   │   └── page.tsx            # About page
+│   ├── projects/
+│   │   └── page.tsx            # Projects page (filterable grid)
+│   └── resume/
+│       └── [type]/
+│           └── page.tsx        # Dynamic resume preview pages
 ├── components/
 │   ├── bento/
 │   │   ├── BentoGrid.tsx
@@ -129,25 +136,41 @@ src/
 │   │   ├── CareerTimeline.tsx
 │   │   ├── ProfileCard.tsx
 │   │   ├── ResumeCard.tsx
-│   │   ├── ExperienceList.tsx
+│   │   ├── ExperienceList.tsx  # Redesigned with logos + skills
 │   │   ├── FeaturedProject.tsx
 │   │   └── TechStackCloud.tsx
 │   ├── ui/
 │   │   ├── Button.tsx
 │   │   ├── SkillChip.tsx
 │   │   ├── SocialIcon.tsx
-│   │   └── SectionHeader.tsx
+│   │   ├── SectionHeader.tsx
+│   │   └── ProjectCard.tsx     # Reusable project card
 │   └── layout/
-│       └── Header.tsx
+│       └── Header.tsx          # Fixed nav with Resume dropdown
 ├── data/
 │   ├── profile.ts
-│   ├── experience.ts
-│   ├── resumes.ts
-│   ├── projects.ts
-│   └── techStack.ts
+│   ├── experience.ts           # Updated: logo, skills fields
+│   ├── resumes.ts              # Updated: slug, pdfPath fields
+│   ├── projects.ts             # Updated: category field
+│   ├── techStack.ts
+│   └── about.ts                # NEW: About page content
 └── lib/
     └── cn.ts
+
+public/
+├── images/
+│   ├── companies/              # Company logos
+│   ├── projects/               # Project screenshots
+│   ├── about/                  # Personal photos
+│   └── stock/                  # Stock images
+└── resumes/                    # Resume PDFs
+    ├── data-engineering.pdf
+    ├── ai-engineer.pdf
+    └── data-scientist.pdf
 ```
+
+## Related Directives
+- See `website-restructure.md` for detailed header, pages, and experience redesign specs
 
 ---
 
