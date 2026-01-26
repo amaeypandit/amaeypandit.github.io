@@ -1,10 +1,10 @@
 "use client";
 
 import { cn } from "@/lib/cn";
-import { LucideIcon } from "lucide-react";
+import { ComponentType } from "react";
 
 interface SocialIconProps {
-  icon: LucideIcon;
+  icon: ComponentType<{ size?: number; className?: string }>;
   href: string;
   label: string;
   className?: string;
