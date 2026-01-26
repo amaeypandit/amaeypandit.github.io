@@ -1,13 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Linkedin, Github, Twitter, ArrowRight } from "lucide-react";
+import { Mail, Linkedin, Github, ArrowRight } from "lucide-react";
 import { profile } from "@/data/profile";
 import { aboutData } from "@/data/about";
+
+// Custom Medium icon to match lucide style
+const MediumIcon = ({ size = 24, className = "" }: { size?: number; className?: string }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M13.5 12a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z" />
+    <path d="M18.5 12a2.5 5.5 0 1 1-5 0 2.5 5.5 0 0 1 5 0Z" />
+    <path d="M21.5 12a1 5.5 0 1 1-2 0 1 5.5 0 0 1 2 0Z" />
+  </svg>
+);
 
 const socialIcons = {
   linkedin: Linkedin,
   github: Github,
-  twitter: Twitter,
+  medium: MediumIcon,
 };
 
 export const metadata = {

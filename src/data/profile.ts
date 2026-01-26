@@ -9,7 +9,7 @@ export const profile = {
   socials: {
     linkedin: "https://www.linkedin.com/in/amaeypandit/",
     github: "https://github.com/amaeypandit",
-    twitter: "",
+    medium: "https://medium.com/@amaey.pandit1",
   },
   headshot: "/images/headshot.jpg",
 };

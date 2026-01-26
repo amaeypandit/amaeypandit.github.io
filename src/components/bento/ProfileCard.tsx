@@ -4,7 +4,26 @@ import Image from "next/image";
 import { BentoTile } from "./BentoTile";
 import { SocialIcon } from "@/components/ui/SocialIcon";
 import { profile } from "@/data/profile";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
+
+// Custom Medium icon to match lucide style
+const MediumIcon = ({ size = 24, className = "" }: { size?: number; className?: string }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M13.5 12a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z" />
+    <path d="M18.5 12a2.5 5.5 0 1 1-5 0 2.5 5.5 0 0 1 5 0Z" />
+    <path d="M21.5 12a1 5.5 0 1 1-2 0 1 5.5 0 0 1 2 0Z" />
+  </svg>
+);
 
 export function ProfileCard() {
   return (
@@ -40,9 +59,9 @@ export function ProfileCard() {
           label="GitHub"
         />
         <SocialIcon
-          icon={Twitter}
-          href={profile.socials.twitter}
-          label="Twitter"
+          icon={MediumIcon}
+          href={profile.socials.medium}
+          label="Medium"
         />
         <SocialIcon
           icon={Mail}
