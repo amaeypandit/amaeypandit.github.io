@@ -5,7 +5,7 @@ import { BentoTile } from "./BentoTile";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { SkillChip } from "@/components/ui/SkillChip";
 import { Brain, BarChart3, Database, Download } from "lucide-react";
-import { resumes, type IconName } from "@/data/resumes";
+import { resumes } from "@/data/resumes";
 
 const iconMap = {
   brain: Brain,
