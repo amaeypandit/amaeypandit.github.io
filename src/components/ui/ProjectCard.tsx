@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { SkillChip } from "./SkillChip";
@@ -21,17 +20,6 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
       onClick={onClick}
       className="bg-surface border border-border rounded-2xl overflow-hidden group hover:border-accent hover:shadow-glow transition-all duration-300 cursor-pointer"
     >
-      {/* Image */}
-      <div className="relative h-40 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/50 to-transparent z-10" />
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-      </div>
-
       {/* Content */}
       <div className="p-5">
         <h3 className="font-display font-bold text-lg text-text-primary mb-2">
