@@ -8,16 +8,18 @@ import type { Project } from "@/data/projects";
 
 interface ProjectCardProps {
   project: Project;
+  onClick?: () => void;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, onClick }: ProjectCardProps) {
   return (
     <motion.div
       layout
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      className="bg-surface border border-border rounded-2xl overflow-hidden group hover:border-accent hover:shadow-glow transition-all duration-300"
+      onClick={onClick}
+      className="bg-surface border border-border rounded-2xl overflow-hidden group hover:border-accent hover:shadow-glow transition-all duration-300 cursor-pointer"
     >
       {/* Image */}
       <div className="relative h-40 overflow-hidden">
@@ -59,6 +61,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="text-text-secondary hover:text-accent transition-colors"
               aria-label="View on GitHub"
             >
@@ -70,6 +73,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="text-text-secondary hover:text-accent transition-colors"
               aria-label="View live site"
             >
