@@ -16,11 +16,11 @@ export default function Home() {
         <CareerTimeline />
         <ProfileCard />
 
-        {/* Resume Hub Section */}
-        <ResumeHub />
-
         {/* Experience Section */}
         <ExperienceList />
+
+        {/* Areas of Expertise */}
+        <ResumeHub />
 
         {/* Projects & Tech Stack */}
         <FeaturedProject />
