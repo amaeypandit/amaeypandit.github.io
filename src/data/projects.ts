@@ -27,6 +27,16 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "playlist-curator",
+    title: "Playlist Curator",
+    description:
+      "Transform large Spotify playlists into coherent micro-playlists using neural audio analysis and AI-powered naming. Uses MERT (Music Understanding Transformer) to analyze actual audio content—not just metadata—to group similar-sounding tracks together. Generates creative playlist names via local Ollama LLM based on audio characteristics like tempo, energy, and key.",
+    image: DEFAULT_PROJECT_IMAGE,
+    techStack: ["Python", "PyTorch", "MERT", "FAISS", "Ollama", "Streamlit", "Spotify API", "Deezer API"],
+    category: "ai-ml",
+    githubUrl: "https://github.com/amaeypandit/playlist-curator",
+  },
+  {
     id: "ai-news-digest",
     title: "AI News Digest",
     description:
